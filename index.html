@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="midterm web project">
+        <meta name="author" content="Arvand Darvish">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My GitHub!</title>
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <link href="./octocat.png" rel="icon" type="image/png"/>
+    </head>
+
+    <body>  
+        <div class="container">
+            <!-- left part -->
+            <div class="left_card">
+                <div class="res_card" id="result">
+                    <img src="./avatar.jpg" alt="avatar">
+                    <p>Name</p>
+                    <p>Blog</p>
+                    <p>Location</p>
+                    <p>Bio</p>
+                    <style type="text/css">
+                        img {
+                            width: 50%;
+                            border-radius: 50%;
+                        }
+                        p {
+                            font-size:17px;
+                        }
+                        </style>
+                </div>
+            </div>
+            <!-- right part -->
+            <span class="right_card">
+                <form class="form_card">
+                    <h1 class="header">My GitHub Information</h1>
+                    <input type="text" class="form-control" placeholder="Username" id="uname">
+                    <button type="button" class="button" id="btn1">Submit</button>
+                </form>
+            </span>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+
+</html>

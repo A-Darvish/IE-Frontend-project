@@ -1,0 +1,121 @@
+/*
+here we set our font for all of the elements 
+and we are aloso setting the background picture bg.bng 
+and we set the size to cover cause we want it to cover 
+the whole page. 
+*/
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: url("./bg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*
+Container contains our 2 pages that the left one is user profile 
+and the right part is our form for getting the username.
+for our container we used flex display and we set 
+its width and position (we set transform property so it would be in center).
+*/
+
+.container {
+    width: 50%;
+    min-height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: grey;
+    opacity: 0.6;
+    padding: 5px;
+    z-index: 100;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*
+Header specify our right side header style (which says My GitHub Information)
+*/
+
+.header {
+    position: relative;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* 
+styling our right part.
+*/
+
+.right_card {
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1.5px;
+    border-color: white;
+    margin-left: 3%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-height: 70%; 
+    width: 30%   
+    
+}
+
+/* 
+styling our form in a way that whenever our user 
+clicks on textfield the border of it goes blue
+ and the rest is just setting the background colors and such.
+*/
+.form-control {
+    display: block;
+    width: 90%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+/* 
+styling our left part.
+*/
+.left_card {
+    /* border-style: solid;
+    border-radius: 25px;
+    border-width: 1.5px;
+    border-color: white; */
+    margin-right: 3%;
+    margin-left: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+    min-height: 70%;
+    width: 60%
+}
+
+/*
+Buttons style.
+*/
+.button {
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    margin: 5px;
+    background-color:  black;
+    color: white;
+    border-radius: 10px;
+}
